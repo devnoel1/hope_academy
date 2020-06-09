@@ -19,22 +19,24 @@
 </head>
 
 <body class="" onload="demo.showNotification('top','left')">
+
     @yield('content')
 
 
 
   <!--   Core JS Files   -->
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/core/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-    <script src="../demo/demo/demo.js"></script>
-    <script src="../js/plugins/bootstrap-notify.js"></script>
-    <script src="../js/form_Validate.js"></script>
+  <script src="{{ asset('/js/jquery-3.2.1.min.js')}}"></script>
+  <script src="{{asset('/js/core/popper.min.js')}}"></script>
+    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
+    <script src="{{asset('/js/paper-dashboard.min.js?v=2.0.0')}}" type="text/javascript"></script>
+    <script src="{{asset('/demo/demo/demo.js')}}"></script>
+    <script src="{{asset('/js/plugins/bootstrap-notify.js')}}"></script>
+    <script src="{{ asset('/js/form_Validate.js')}}"></script>
 
     <?php include "change_psword.php";?>
       <?php include "chnge_img.php";?>
+
           <script type="text/javascript">
              $('.input-images').imageUploader();
 
