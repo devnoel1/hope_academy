@@ -2470,7 +2470,11 @@ body {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+<<<<<<< HEAD
    overflow-x: scroll; 
+=======
+   overflow-y: scroll; 
+>>>>>>> fdd4b278b474b09e15e995857e0f8c2ba6bc5f11
 }
 
 .main {
